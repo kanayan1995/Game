@@ -64,22 +64,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Project\Script\Camera\MainCamra.cs" />
-    <Compile Include="Assets\Project\Script\Collision\Collision.cs" />
-    <Compile Include="Assets\Project\Script\Player\Player.cs" />
+    <Compile Include="Assets\Project\Script\Chara\Gravity.cs" />
+    <Compile Include="Assets\Project\Script\Chara\Player\Player.cs" />
+    <Compile Include="Assets\Project\Script\Common\Collision\Collision.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/まとめ/プログラム/Kirby/Game/Unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/まとめ/project/GameProject/Game/Kirby/trunk/Unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/まとめ/プログラム/Kirby/Game/Unity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/まとめ/project/GameProject/Game/Kirby/trunk/Unity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/まとめ/プログラム/Kirby/Game/Unity/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/まとめ/project/GameProject/Game/Kirby/trunk/Unity/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/まとめ/プログラム/Kirby/Game/Unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/まとめ/project/GameProject/Game/Kirby/trunk/Unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/まとめ/プログラム/Kirby/Game/Unity/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/まとめ/project/GameProject/Game/Kirby/trunk/Unity/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -283,13 +284,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.10f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/まとめ/プログラム/Kirby/Game/Unity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/まとめ/project/GameProject/Game/Kirby/trunk/Unity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/まとめ/プログラム/Kirby/Game/Unity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/まとめ/project/GameProject/Game/Kirby/trunk/Unity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/まとめ/プログラム/Kirby/Game/Unity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/まとめ/project/GameProject/Game/Kirby/trunk/Unity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.10f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
