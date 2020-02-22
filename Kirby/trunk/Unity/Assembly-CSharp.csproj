@@ -67,6 +67,12 @@
     <Compile Include="Assets\Project\Script\Chara\Gravity.cs" />
     <Compile Include="Assets\Project\Script\Chara\Player\Player.cs" />
     <Compile Include="Assets\Project\Script\Common\Collision\Collision.cs" />
+    <Compile Include="Assets\Project\Script\Common\Utility\SingletonMonoBehaviour.cs" />
+    <Compile Include="Assets\Project\Script\Debug\MainStage01.cs" />
+    <Compile Include="Assets\Project\Script\Debug\TestCode.cs" />
+    <Compile Include="Assets\Project\Script\Stage\StageData.cs" />
+    <Compile Include="Assets\Project\Script\Stage\StageManager.cs" />
+    <Compile Include="Assets\Project\Script\Stage\StageMapData.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/まとめ/project/GameProject/Game/Kirby/trunk/Unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

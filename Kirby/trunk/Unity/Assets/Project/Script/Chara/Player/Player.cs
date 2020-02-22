@@ -7,12 +7,26 @@ using UnityEngine;
 /// </summary>
 public class Player : MonoBehaviour
 {
+
+    /// <summary>
+    /// プレイヤー状態
+    /// </summary>
+    public enum PlayerState
+    {
+        None = -1, 
+        Idel,       // 待機中
+        Move,
+        Jump,       // ジャンプ中
+    }
+    private PlayerState m_playerState;
+
+    public MainStage01 MainStage { set; get; }
+
     /// <summary>
     /// 生成時呼び出し処理
     /// </summary>
     private void Awake()
     {
-        
     }
 
     /// <summary>
@@ -34,7 +48,7 @@ public class Player : MonoBehaviour
     /// 左スティック入力
     /// </summary>
     /// <returns></returns>
-    private bool LefttickStay()
+    private bool LeftStickStay()
     {
         var left = Input.GetAxis("InputMoveX");
         if (left > 0)
@@ -44,6 +58,12 @@ public class Player : MonoBehaviour
 
 
         return Input.GetKey(KeyCode.D);
+    }
+
+    private bool JumpPush()
+    {
+
+        return Input.GetKeyDown(KeyCode.W);
     }
 
     /// <summary>
@@ -59,10 +79,17 @@ public class Player : MonoBehaviour
         }
 
         // 右移動
-        if (LefttickStay())
+        if (LeftStickStay())
         {
             var moveRight = new Vector3(1.0f, 0.0f, 0.0f);
             transform.position += moveRight * Time.deltaTime;
+        }
+
+        //ジャンプ設定
+        if (JumpPush())
+        {
+            var rigid = GetComponent<Rigidbody>();
+            rigid.AddForce(new Vector3(0.0f, 9.8f*20, 0.0f));
         }
     }
 
@@ -72,6 +99,36 @@ public class Player : MonoBehaviour
     private void PlayerUpdate()
     {
         Move();
+        CollisionUpdate();
+    }
+
+    /// <summary>
+    /// 当たり判定更新
+    /// </summary>
+    private void CollisionUpdate()
+    {
+        
+    }
+
+    /// <summary>
+    /// 壁との当たり判定
+    /// </summary>
+    private void CollisionWall()
+    {
+        var length = StageManager.Instance.mainStage01.length;
+        var pos = transform.localPosition;
+        var posX = (int)(pos.x / length);
+        var posY = (int)(pos.y / length);
+        var mapData = StageManager.Instance.mainStage01.GetStageData(posX, posY);
+
+        // 右との当たり判定
+
+        // 左との当たり判定
+
+        // 上との当たり判定
+
+        // 下との当たり判定
+        
     }
 
     /// <summary>
